@@ -48,7 +48,7 @@ module.exports = new Command('database:push <path> [infile]')
           path += '/';
         }
 
-        var refurl = utils.addSubdomain(api.realtimeOrigin, options.instance) + path + body.name
+        var refurl = utils.addSubdomain(api.realtimeOrigin, options.instance) + path + body.name;
 
         utils.logSuccess('Data pushed successfully');
         logger.info();
